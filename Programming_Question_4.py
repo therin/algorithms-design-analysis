@@ -2,6 +2,14 @@ import random
 import copy
 # -*- coding: utf-8 -*-
 '''
+
+No recursion due to depth limit
+
+Use defaultdict to store linked list, instead of list, use set
+
+no need to use class for vertices to add properties (discover time, finish time, color, etc), use dict
+
+append no insert
 '''
 
 class Node():
