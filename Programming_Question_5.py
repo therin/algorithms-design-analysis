@@ -71,7 +71,6 @@ def findScoreCrossingVertices(X, V, A, currentCrossingVertices):
     toReturn = {k: v for k, v in A.items() if k in [
         item[0] for item in currentCrossingVertices] and k not in X.keys()}
     bestNode = sorted(toReturn.items(), key=lambda x: x[1])[0]
-    currentCrossingVertices.remove(bestNode)
     return bestNode
 
 
